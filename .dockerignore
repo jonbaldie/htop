@@ -1,0 +1,26 @@
+# Version control
+.git/
+
+# Beads / Dolt
+.beads/
+.dolt/
+*.db
+
+# Worktrees
+.worktrees/
+
+# GitHub
+.github/
+
+# Editor swap files
+*.swp
+*.swo
+
+# Non-build files
+README.md
+LICENSE
+AGENTS.md
+CLAUDE.md
+.travis.yml
+.gitignore
+Makefile
