@@ -82,3 +82,10 @@ bd close <id>         # Complete work
 - NEVER say "ready to push when you are" - YOU must push
 - If push fails, resolve and retry until it succeeds
 <!-- END BEADS INTEGRATION -->
+
+## Testing
+- Use red/green TDD. 
+- Actually run the code, automated tests by themselves aren't sufficient.
+- Use 'tracer bullets', aka canary tests, aka smoke tests, aka E2E tests. 
+- Actively look for genuine bugs, edge cases, failure modes - if you find these, then you've succeeded, not failed. 
+- No mocks, ever. They're a common escape hatch for writing tautological or pat-self-on-back tests.
