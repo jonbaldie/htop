@@ -49,21 +49,9 @@ bd close <id>         # Complete work
 - If push fails, resolve and retry until it succeeds
 <!-- END BEADS INTEGRATION -->
 
-
-## Build & Test
-
-_Add your build and test commands here_
-
-```bash
-# Example:
-# npm install
-# npm test
-```
-
-## Architecture Overview
-
-_Add a brief overview of your project architecture_
-
-## Conventions & Patterns
-
-_Add your project-specific conventions here_
+## Testing
+- Use red/green TDD. 
+- Actually run the code, automated tests by themselves aren't sufficient.
+- Use 'tracer bullets', aka canary tests, aka smoke tests, aka E2E tests. 
+- Actively look for genuine bugs, edge cases, failure modes - if you find these, then you've succeeded, not failed. 
+- No mocks, ever. They're a common escape hatch for writing tautological or pat-self-on-back tests.
