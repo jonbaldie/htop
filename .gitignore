@@ -4,3 +4,7 @@
 .dolt/
 *.db
 .beads-credential-key
+
+# Editor swap files
+*.swp
+*.swo
