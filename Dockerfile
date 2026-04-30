@@ -1,8 +1,7 @@
-FROM alpine
+FROM alpine:3.19
 
-MAINTAINER Jonathan Baldie "jon@jonbaldie.com"
+LABEL maintainer="Jonathan Baldie <jon@jonbaldie.com>"
 
-RUN apk update
-RUN apk add htop
+RUN apk add --no-cache htop
 
-CMD htop
+CMD ["htop"]
